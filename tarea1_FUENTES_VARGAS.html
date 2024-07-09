@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Verificación de propiedad con in: Para comprobar si una propiedad no está definida en un objeto
+        console.log("undefined -- ejemplo:");
+        let obj = {};
+        console.log('prop' in obj); // false
+        console.log(obj.prop); // undefined
+
+        // void: Esta operación devuelve undefined sin importar el argumento que le pases
+        console.log("void 0:");
+        console.log(void 0); // undefined
+        console.log("void 'anything':");
+        console.log(void "anything"); // undefined
+
+
+
+        // typeof: Esta función se usa para verificar el tipo de un valor.
+        console.log("typeof undefined:");
+        let x;
+        console.log(typeof x); // "undefined"
+    </script>
+    <script>
+        console.log("Boolean -- ejemplo:");
+        // Boolean: Función constructora que puede convertir otros tipos de datos a booleano.
+
+        console.log(Boolean(0)); // false
+        console.log(Boolean(1)); // true
+        console.log(Boolean("")); // false
+        console.log(Boolean("hello")); // true
+
+        // Operadores lógicos: &&, ||, ! son operadores lógicos que funcionan con valores booleanos.
+        console.log("Logical operators:");
+        console.log(true && false); // false
+        console.log(true || false); // true
+        console.log(!true); // false
+
+        // !! (doble negación): Una forma rápida de convertir cualquier valor a su equivalente booleano
+        console.log(!!0); // false
+        console.log(!!1); // true
+        console.log(!!""); // false
+        console.log(!!"hello"); // true
+    </script>
+
+    <script>
+        console.log("Operaciones numéricas -- ejemplo:");
+        // Operaciones aritméticas: Puedes realizar operaciones básicas como suma, resta, multiplicación y división.
+
+        let a = 10;
+        let b = 3;
+        console.log(a + b); // 13
+        console.log(a - b); // 7
+        console.log(a * b); // 30
+        console.log(a / b); // 3.3333...
+
+        // Math Object: JavaScript tiene un objeto Math con muchos métodos útiles para trabajar con números.
+        console.log(Math.abs(-10)); // 10
+        console.log(Math.ceil(1.4)); // 2
+        console.log(Math.floor(1.8)); // 1
+        console.log(Math.round(1.5)); // 2
+        console.log(Math.max(1, 2, 3)); // 3
+        console.log(Math.min(1, 2, 3)); // 1
+        console.log(Math.random()); // número aleatorio entre 0 y 1
+        console.log(Math.pow(2, 3)); // 8
+        console.log(Math.sqrt(16)); // 4
+
+        // Number Constructor: Puedes usar el constructor Number para convertir valores a números.
+        console.log(Number("10")); // 10
+        console.log(Number("10.5")); // 10.5
+        console.log(Number(true)); // 1
+        console.log(Number(false)); // 0
+    </script>
+
+    <script>
+        console.log("String -- ejemplos:");
+        // String concatenation: Concatenar strings usando el operador +.
+        let str1 = "Hola";
+        let str2 = "Mundo";
+        let result = str1 + " " + str2;
+        console.log(result); // "Hola Mundo"
+
+        // String length: Obtener la longitud de un string.
+        let text = "JavaScript";
+        console.log(text.length); // 10
+
+        // String methods: Usar métodos de string como toUpperCase() y toLowerCase().
+        let greeting = "Hello World";
+        console.log(greeting.toUpperCase()); // "HELLO WORLD"
+        console.log(greeting.toLowerCase()); // "hello world"
+    </script>
+
+    <script>
+        console.log("Object -- ejemplos:");
+        // Crear un objeto y acceder a sus propiedades.
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30
+        };
+        console.log(person.firstName); // "John"
+        console.log(person["lastName"]); // "Doe"
+
+        // Modificar propiedades de un objeto.
+        person.age = 35;
+        console.log(person.age); // 35
+
+        // Añadir nuevas propiedades a un objeto.
+        person.job = "Developer";
+        console.log(person.job); // "Developer"
+    </script>
+
+    <script>
+        console.log("Array -- ejemplos:");
+        // Crear un array y acceder a sus elementos.
+        let fruits = ["Apple", "Banana", "Cherry"];
+        console.log(fruits[0]); // "Apple"
+        console.log(fruits[1]); // "Banana"
+
+        // Añadir elementos a un array.
+        fruits.push("Orange");
+        console.log(fruits); // ["Apple", "Banana", "Cherry", "Orange"]
+
+        // Eliminar el último elemento de un array.
+        let lastFruit = fruits.pop();
+        console.log(lastFruit); // "Orange"
+        console.log(fruits); // ["Apple", "Banana", "Cherry"]
+    </script>
+
+</body>
+
+</html>
